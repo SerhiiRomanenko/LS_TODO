@@ -1,0 +1,44 @@
+@import "reset.css";
+
+body {
+  background-color: #2272C7;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  margin-top: 50px;
+  color: white;
+}
+
+.main {
+  margin: 0 auto;
+
+  &__input {
+    width: 434px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: 0 5px;
+  }
+}
+
+.list {
+  width: 440px;
+  margin: 0 auto;
+
+  &__item {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+
+  &__delete {
+    height: 30px;
+    align-self: center;
+
+  }
+}
