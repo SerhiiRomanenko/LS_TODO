@@ -19,9 +19,18 @@ body {
     width: 434px;
     height: 40px;
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 0 5px;
   }
+}
+
+.sort {
+  width: 440px;
+  margin: 0 auto;
+  padding: 12px 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 5px;
 }
 
 .list {
@@ -39,6 +48,14 @@ body {
   &__delete {
     height: 30px;
     align-self: center;
+    text-decoration: none;
+  }
+}
 
+.solved {
+  background-color: darkgrey;
+
+  & > p {
+    text-decoration: line-through;
   }
 }
