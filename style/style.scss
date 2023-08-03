@@ -1,5 +1,6 @@
 @import "reset.css";
 
+
 body {
   background-color: #2272C7;
   margin: 0 auto;
@@ -8,8 +9,12 @@ body {
 }
 
 .header {
-  margin-top: 50px;
   color: white;
+  margin-top: 50px;
+
+  @media (max-width: 600px) {
+    margin-top: 30px;
+  }
 }
 
 .main {
@@ -21,21 +26,34 @@ body {
     font-size: 20px;
     margin-bottom: 20px;
     padding: 0 5px;
+
+    @media (max-width: 600px) {
+      width: 335px;
+    }
   }
 }
 
 .sort {
-  width: 440px;
   margin: 0 auto;
   padding: 12px 0;
   display: flex;
   justify-content: flex-end;
   gap: 5px;
+  width: 440px;
+
+  @media (max-width: 600px) {
+    width: 350px;
+  }
 }
 
 .list {
   width: 440px;
   margin: 0 auto;
+
+  @media (max-width: 600px) {
+    width: 350px;
+  }
+
 
   &__item {
     background-color: white;
@@ -59,3 +77,5 @@ body {
     text-decoration: line-through;
   }
 }
+
+

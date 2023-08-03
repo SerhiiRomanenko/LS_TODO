@@ -1,48 +1,78 @@
-@import url(reset.css);
+@import "reset.css";
 body {
   background-color: #2272C7;
   margin: 0 auto;
   text-align: center;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: "Montserrat", sans-serif;
+}
 
 .header {
+  color: white;
   margin-top: 50px;
-  color: white; }
+}
+@media (max-width: 600px) {
+  .header {
+    margin-top: 30px;
+  }
+}
 
 .main {
-  margin: 0 auto; }
+  margin: 0 auto;
+}
+.main__input {
+  width: 434px;
+  height: 40px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 0 5px;
+}
+@media (max-width: 600px) {
   .main__input {
-    width: 434px;
-    height: 40px;
-    font-size: 20px;
-    margin-bottom: 20px;
-    padding: 0 5px; }
+    width: 335px;
+  }
+}
 
 .sort {
-  width: 440px;
   margin: 0 auto;
   padding: 12px 0;
   display: flex;
   justify-content: flex-end;
-  gap: 5px; }
+  gap: 5px;
+  width: 440px;
+}
+@media (max-width: 600px) {
+  .sort {
+    width: 350px;
+  }
+}
 
 .list {
   width: 440px;
-  margin: 0 auto; }
-  .list__item {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-    margin-bottom: 10px; }
-  .list__delete {
-    height: 30px;
-    align-self: center;
-    text-decoration: none; }
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  .list {
+    width: 350px;
+  }
+}
+.list__item {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin-bottom: 10px;
+}
+.list__delete {
+  height: 30px;
+  align-self: center;
+  text-decoration: none;
+}
 
 .solved {
-  background-color: darkgrey; }
-  .solved > p {
-    text-decoration: line-through; }
+  background-color: darkgrey;
+}
+.solved > p {
+  text-decoration: line-through;
+}
 
 /*# sourceMappingURL=style.css.map */
